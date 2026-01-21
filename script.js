@@ -71,4 +71,4 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 // ========= Mostrar WA en texto =========
 const waText = document.getElementById("waText");
-if (waText) waText.textContent = "+52 712 101 795";
+if (waText) waText.textContent = "+52 7121051795";
