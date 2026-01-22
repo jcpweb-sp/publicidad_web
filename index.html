@@ -78,23 +78,13 @@
         </div>
       </div>
 
-      <div class="heroCard">
-        <div class="mockTop">
-          <span></span><span></span><span></span>
-        </div>
-        <div class="mockBody">
-          <p class="mockLabel">JCP WEB / Landing</p>
-          <h3>Una web que vende</h3>
-          <p class="mockText">CTA, beneficios, FAQ y contacto directo por WhatsApp.</p>
-
-          <div class="mockBtns">
-            <div class="mb primary"></div>
-            <div class="mb ghost"></div>
-          </div>
-
-          <div class="mockGrid">
-            <div></div><div></div><div></div>
-          </div>
+      <!-- HERO IMAGEN -->
+      <div class="heroMedia">
+        <img src="img/paginaweb.png" alt="Diseño Web" class="heroImg">
+        <div class="heroOverlay">
+          <p class="heroTag">DISEÑO WEB</p>
+          <h3>Interfaz moderna y premium</h3>
+          <p>Ideal para negocios, servicios y publicidad.</p>
         </div>
       </div>
     </div>
@@ -129,7 +119,7 @@
     </div>
   </section>
 
-  <!-- Servicios (solo básico) -->
+  <!-- Servicios -->
   <section class="section alt" id="servicios">
     <div class="container">
       <div class="sectionTitle">
@@ -160,11 +150,14 @@
     <div class="container">
       <div class="sectionTitle">
         <h2>Portafolio</h2>
+        <p>Ejemplos / demos (puedes cambiar links y fotos después)</p>
       </div>
 
       <div class="portfolio">
         <a class="work" href="#" target="_blank" rel="noopener">
-          <div class="thumb"></div>
+          <div class="thumb">
+            <img src="img/CTA.PNG" alt="Proyecto 1">
+          </div>
           <div class="workInfo">
             <h3>Landing de Servicio</h3>
             <p>Publicidad + CTA</p>
@@ -172,7 +165,9 @@
         </a>
 
         <a class="work" href="#" target="_blank" rel="noopener">
-          <div class="thumb t2"></div>
+          <div class="thumb">
+            <img src="img/negocio.png" alt="Proyecto 2">
+          </div>
           <div class="workInfo">
             <h3>Web de Negocio</h3>
             <p>Secciones + contacto</p>
@@ -180,7 +175,9 @@
         </a>
 
         <a class="work" href="#" target="_blank" rel="noopener">
-          <div class="thumb t3"></div>
+          <div class="thumb">
+            <img src="img/jcp.png" alt="Proyecto 3">
+          </div>
           <div class="workInfo">
             <h3>Portafolio</h3>
             <p>Proyectos + CV</p>
@@ -190,7 +187,7 @@
     </div>
   </section>
 
-  <!-- Precio / Plan Básico -->
+  <!-- Precio -->
   <section class="section alt" id="precio">
     <div class="container">
       <div class="sectionTitle">
@@ -267,7 +264,7 @@
         </label>
         <label>
           Teléfono / WhatsApp
-          <input required name="telefono" type="tel" placeholder="Ej. +8888888888" />
+          <input required name="telefono" type="tel" placeholder="Ej. 7121051795" />
         </label>
         <label>
           ¿Qué necesitas?
@@ -286,8 +283,10 @@
     </div>
   </footer>
 
-  <!-- WhatsApp flotante -->
-  <a class="waFloat" id="waFloat" href="#" title="WhatsApp" aria-label="WhatsApp">WA</a>
+  <!-- WhatsApp flotante (solo imagen) -->
+  <a class="waFloat" id="waFloat" href="#" title="WhatsApp" aria-label="WhatsApp">
+    <img src="img/WhatsApp.png" alt="WhatsApp" class="waImg">
+  </a>
 
   <script src="script.js"></script>
 </body>

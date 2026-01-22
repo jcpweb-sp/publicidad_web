@@ -1,6 +1,6 @@
 // ========= CONFIG =========
-// Cambia tu WhatsApp aquí (sin +, sin espacios)
-const WHATS = "527121051795";
+// WhatsApp (con clave de México 52)
+const WHATS = "527121051795"; // +52 7121051795
 
 // ========= MENU MOVIL =========
 const menuBtn = document.getElementById("menuBtn");
@@ -10,7 +10,7 @@ menuBtn?.addEventListener("click", () => {
   menu.classList.toggle("show");
 });
 
-document.querySelectorAll(".menu a").forEach(a => {
+document.querySelectorAll('.menu a').forEach(a => {
   a.addEventListener("click", () => menu.classList.remove("show"));
 });
 
@@ -24,13 +24,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ========= NAVBAR SCROLL EFFECT =========
-const header = document.querySelector(".header");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 10) header.classList.add("scrolled");
-  else header.classList.remove("scrolled");
-});
-
 // ========= WHATSAPP =========
 function openWhatsApp(text) {
   const msg = encodeURIComponent(text);
@@ -39,12 +32,12 @@ function openWhatsApp(text) {
 
 document.getElementById("btnWhatsTop")?.addEventListener("click", (e) => {
   e.preventDefault();
-  openWhatsApp("Hola! Quiero cotizar una página web (Plan Básico). ¿Me puedes dar informes?");
+  openWhatsApp("Hola! Quiero cotizar una página web. ¿Me puedes dar informes?");
 });
 
 document.getElementById("waFloat")?.addEventListener("click", (e) => {
   e.preventDefault();
-  openWhatsApp("Hola! Vi tu página y quiero una landing (Plan Básico). ¿Me puedes cotizar?");
+  openWhatsApp("Hola! Vi tu página y quiero una web. ¿Me puedes cotizar?");
 });
 
 // ========= FORM A WHATSAPP =========
@@ -69,6 +62,6 @@ Quiero: ${mensaje}
 // ========= YEAR =========
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// ========= Mostrar WA en texto =========
+// Mostrar WA en texto si existe
 const waText = document.getElementById("waText");
 if (waText) waText.textContent = "+52 7121051795";
