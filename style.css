@@ -320,29 +320,40 @@ textarea{ resize:vertical; }
 .foot a{ color:var(--muted); }
 .foot a:hover{ color:var(--text); }
 
-/* WhatsApp flotante - SOLO ICONO */
+/* Botón WhatsApp redondo */
 .waFloat{
   position: fixed;
   right: 18px;
   bottom: 18px;
+
   width: 64px;
   height: 64px;
-  display:grid;
-  place-items:center;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  overflow: hidden;      /* 🔥 CLAVE: recorta la imagen */
   background: transparent;
+
   border: none;
   box-shadow: none;
+
   z-index: 999;
   animation: wa-bounce 2s infinite;
   filter: drop-shadow(0 14px 20px rgba(0,0,0,.25));
 }
 
+/* Imagen WhatsApp recortada */
 .waImg{
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  display:block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* 🔥 llena el círculo */
+  border-radius: 50%;    /* 🔥 fuerza círculo */
+  display: block;
 }
+
+
 
 /* Animación */
 @keyframes wa-bounce{
@@ -372,4 +383,5 @@ textarea{ resize:vertical; }
     box-shadow: var(--shadow);
   }
   .menu.show{ display:flex; }
+  
 }
